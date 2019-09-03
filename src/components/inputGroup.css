@@ -1,0 +1,38 @@
+.input-group {
+    color: #555;
+    margin: 0.8em 0;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    font-size: 0.8em;
+    margin-bottom: 0.3em;
+}
+
+input {
+    box-sizing: border-box;
+    border: 1px solid #d0d0d0;
+    border-radius: 0.2em;
+    width: 100%;
+    padding: 0.75em 1em;
+    font-weight: 600;
+    font-size: 0.8em;
+    color: #555;
+}
+
+input:focus {
+    outline:none;
+    border-color: #428aca;
+}
+
+.show {
+    font-size: 0.9em;
+    float: right;
+    cursor: pointer;
+}
+
+small {
+    color: rgb(200, 100, 100);
+    font-size: 0.5em;
+}

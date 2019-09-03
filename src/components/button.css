@@ -1,0 +1,19 @@
+.arrow-button {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 0.75em 1em;
+    margin: 1em 0;
+    border-radius: 0.2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-text {
+    font-size: 0.8em;
+}
+
+.arrow {
+    font-size: 1.1em;
+}
