@@ -55,7 +55,7 @@ class Login extends React.Component {
 
   render(){
       return(
-        <div className='login'>
+        <div className='page'>
           <header>
               <img className='logo' src={logo} alt='logo' />
               <h2>Welcome Back</h2>

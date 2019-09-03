@@ -1,3 +1,26 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
+
+h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #353535;
+    margin: 0;
+}
+
+p {
+    color: #555;
+    font-weight: 600;
+    margin: 0;
+    font-size: 0.8em;
+}
+
+.headSubtext {
+    font-size: 0.9em;
+}
+
+.page {
+    width: 85%;
+    margin: 2em auto;
+}

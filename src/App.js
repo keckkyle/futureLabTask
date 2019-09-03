@@ -5,7 +5,7 @@ import HomePage from './pages/homepage'
 
 class App extends React.Component {
   state ={
-    currentUser: null,
+    currentUser: 'keckkyle@gmail.com',
   }
 
   updateUser = (user) => {
