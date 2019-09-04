@@ -61,9 +61,30 @@ class Login extends React.Component {
               <h2>Welcome Back</h2>
               <p className="headSubtext">Sign in to continue</p>
           </header>
-          <InputGroup type='email' id="email" name="email" validate={this.state.invalidEmail} inputChange={this.handleInputChange}>Email</InputGroup>
-          <InputGroup type='password' id="password" name="password" validate={this.state.invalidPassword} viewToggle inputChange={this.handleInputChange}>Password</InputGroup>
-          <Button onClick={this.onLogin} color="#428aca">Login</Button>
+          <InputGroup 
+            type='email' 
+            id="email" 
+            name="email" 
+            validate={this.state.invalidEmail} 
+            inputChange={this.handleInputChange}
+          >
+            Email
+          </InputGroup>
+          <InputGroup 
+            type='password' 
+            id="password" 
+            name="password" 
+            validate={this.state.invalidPassword} viewToggle 
+            inputChange={this.handleInputChange}
+          >
+            Password
+          </InputGroup>
+          <Button 
+            onClick={this.onLogin} 
+            color="#428aca"
+          >
+            Login
+          </Button>
           <a href="#">Forgot password</a>
           <div className="new-user">
               <p>Don't have an account?</p>

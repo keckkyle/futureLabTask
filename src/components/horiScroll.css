@@ -1,0 +1,43 @@
+.horizontal-scroll-box {
+    display: flex;
+    overflow-x: scroll;
+    padding: 0 1.3em;
+}
+
+.horizontal-scroll-box::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.scroll-bar {
+    position: relative;
+    width: 80px;
+    margin: 0.5em auto;
+}
+
+.scroll-dots {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #428aca;
+}
+
+.bar-container{
+    position: absolute;
+    top:0;
+    width:46px;
+}
+
+.bar {
+    position: absolute;
+    top:0;
+    width: 34px;
+    height: 6px;
+    border-radius: 3px;
+    background: #428aca;
+}
