@@ -2,11 +2,16 @@ import React from 'react';
 import './homepage.css'
 import MentorCard from '../components/mentorCard'
 import HoriScroll from '../components/horiScroll'
+import HPSection from '../components/hpSection'
+import ArticleCard from '../components/articleCard'
 import man1 from '../images/man1.jpg'
 import man2 from '../images/man2.jpg'
 import man3 from '../images/man3.jpg'
 import woman1 from '../images/woman1.jpg'
 import woman2 from '../images/woman2.jpg'
+import code from '../images/code.jpg'
+import robot from '../images/robot.jpg'
+import work from '../images/work.jpg'
 
 class HomePage extends React.Component {
   state = {}
@@ -14,11 +19,10 @@ class HomePage extends React.Component {
   render(){
     return(
       <div className='page'>
-        <section className='mentors'>
-          <div className='section-head'>
-            <h2>My mentors</h2>
-            <p className='headSubtext'>Your recent mentors</p>
-          </div>
+        <HPSection 
+          head='My mentors'
+          sub='Your recent mentors'
+        >
           <HoriScroll>
             <MentorCard
               img={man1}
@@ -56,7 +60,35 @@ class HomePage extends React.Component {
               online="28 Aug 2019 at 10.20AM"
             />
           </HoriScroll>
-        </section>
+        </HPSection>
+        <HPSection 
+          head='Learning Materials'
+          sub='Check out whats new.'
+        >
+          <HoriScroll>
+            <ArticleCard
+              img={code}
+              title="Learn how to code faster"
+              publisher="INIT College"
+              time="6 minute read"
+              views="192812 views"
+            />
+            <ArticleCard
+              img={robot}
+              title="The age of robotics"
+              publisher="Science Today"
+              time="8 minute read"
+              views="153135 views"
+            />
+            <ArticleCard
+              img={work}
+              title="Improve your productivity"
+              publisher="Business Today"
+              time="5 minute read"
+              views="22513 views"
+            />
+          </HoriScroll>
+        </HPSection>
       </div>
     )
   }

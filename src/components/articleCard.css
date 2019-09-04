@@ -1,0 +1,39 @@
+.article-card {
+    width: 100vw;
+    padding: 1.5em .3em 1em;
+}
+
+.article-card:last-child {
+    padding-right: 1.7em
+}
+
+.card-content {
+    box-sizing: border-box;
+    border-radius: 0.2em;
+    width: 85vw;
+    max-width: 355px;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0 0 20px #d1d1d1;
+    overflow: hidden;
+}
+
+.card-body {
+    padding: 0.5em 1.3em 1.3em;
+}
+
+.image-head {
+    height: 11em;
+    background-size: cover;
+    background-position: center;
+}
+
+.article-stats{
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.article-stats p{
+    color: #999;
+}
