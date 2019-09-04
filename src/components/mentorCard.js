@@ -11,7 +11,10 @@ const MentorCard = (props) => (
         >
         </div>
         <div>
-            <h3 className='mentor-name'>{props.name}</h3>
+            <h3 
+              onClick={props.hideHomepage}
+              className='mentor-name'
+            >{props.name}</h3>
             <p>{props.occupation}</p>
             <p>{props.organization}</p>
         </div>

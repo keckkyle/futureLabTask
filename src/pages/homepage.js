@@ -13,11 +13,7 @@ import code from '../images/code.jpg'
 import robot from '../images/robot.jpg'
 import work from '../images/work.jpg'
 
-class HomePage extends React.Component {
-  state = {}
-
-  render(){
-    return(
+const HomePage = (props) => (
       <div className='page'>
         <HPSection 
           head='My mentors'
@@ -30,6 +26,7 @@ class HomePage extends React.Component {
               occupation="Student"
               organization="INIT College"
               online="10 May 2019 at 2.30PM"
+              hideHomepage={props.hideHomepage}
             />
             <MentorCard
               img={woman1}
@@ -91,7 +88,5 @@ class HomePage extends React.Component {
         </HPSection>
       </div>
     )
-  }
-}
 
 export default HomePage

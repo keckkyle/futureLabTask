@@ -56,39 +56,41 @@ class Login extends React.Component {
   render(){
       return(
         <div className='page'>
-          <header>
-              <img className='logo' src={logo} alt='logo' />
-              <h2>Welcome Back</h2>
-              <p className="headSubtext">Sign in to continue</p>
-          </header>
-          <InputGroup 
-            type='email' 
-            id="email" 
-            name="email" 
-            validate={this.state.invalidEmail} 
-            inputChange={this.handleInputChange}
-          >
-            Email
-          </InputGroup>
-          <InputGroup 
-            type='password' 
-            id="password" 
-            name="password" 
-            validate={this.state.invalidPassword} viewToggle 
-            inputChange={this.handleInputChange}
-          >
-            Password
-          </InputGroup>
-          <Button 
-            onClick={this.onLogin} 
-            color="#428aca"
-          >
-            Login
-          </Button>
-          <a href="#">Forgot password</a>
-          <div className="new-user">
-              <p>Don't have an account?</p>
-              <a href="#">Sign up for an account.</a>
+          <div className='login-content'>
+            <header>
+                <img className='logo' src={logo} alt='logo' />
+                <h2>Welcome Back</h2>
+                <p className="headSubtext">Sign in to continue</p>
+            </header>
+            <InputGroup 
+              type='email' 
+              id="email" 
+              name="email" 
+              validate={this.state.invalidEmail} 
+              inputChange={this.handleInputChange}
+            >
+              Email
+            </InputGroup>
+            <InputGroup 
+              type='password' 
+              id="password" 
+              name="password" 
+              validate={this.state.invalidPassword} viewToggle 
+              inputChange={this.handleInputChange}
+            >
+              Password
+            </InputGroup>
+            <Button 
+              onClick={this.onLogin} 
+              color="#428aca"
+            >
+              Login
+            </Button>
+            <a href="#">Forgot password</a>
+            <div className="new-user">
+                <p>Don't have an account?</p>
+                <a href="#">Sign up for an account.</a>
+            </div>
           </div>
         </div>
       )

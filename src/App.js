@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
 import Login from './pages/login'
-import HomePage from './pages/homepage'
+import User from './pages/user'
 
 class App extends React.Component {
   state ={
-    currentUser: 'keckkyle@gmail.com',
+    currentUser: "hello",
   }
 
   updateUser = (user) => {
@@ -20,7 +20,7 @@ class App extends React.Component {
       {!this.state.currentUser ?
         <Login updateUser={this.updateUser}/>
         :
-        <HomePage />
+        <User />
       }
       </>
     )
