@@ -5,7 +5,7 @@ import User from './pages/user'
 
 class App extends React.Component {
   state ={
-    currentUser: "hello",
+    currentUser: null,
   }
 
   updateUser = (user) => {

@@ -1,6 +1,5 @@
 import React from 'react';
 import './profilepage.css'
-import man1 from '../images/man1.jpg'
 
 const arrow = String.fromCharCode(8592)
 
@@ -13,13 +12,13 @@ const ProfilePage = (props) => (
       <div className='user'>
         <div 
           className='user-image'
-          style={{backgroundImage: `url(${man1})`}}
+          style={{backgroundImage: `url(${props.img})`}}
         >
         </div>
         <div className='user-details'>
-          <h3>Kyle Carpenter</h3>
-          <p>Student</p>
-          <p>INIT College</p>
+          <h3>{props.name}</h3>
+          <p>{props.occ}</p>
+          <p>{props.org}</p>
         </div>
       </div>
     </div>

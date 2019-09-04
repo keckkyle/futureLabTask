@@ -27,6 +27,7 @@ const HomePage = (props) => (
               organization="INIT College"
               online="10 May 2019 at 2.30PM"
               hideHomepage={props.hideHomepage}
+              updateInfo={props.updateInfo}
             />
             <MentorCard
               img={woman1}
@@ -34,6 +35,8 @@ const HomePage = (props) => (
               occupation="Professor"
               organization="University of South Australia"
               online="20 Aug 2019 at 4.45PM"
+              hideHomepage={props.hideHomepage}
+              updateInfo={props.updateInfo}
             />
             <MentorCard
               img={woman2}
@@ -41,6 +44,8 @@ const HomePage = (props) => (
               occupation="Editor"
               organization="Las Vegas Sun"
               online="01 Sep 2019 at 8.15AM"
+              hideHomepage={props.hideHomepage}
+              updateInfo={props.updateInfo}
             />
             <MentorCard
               img={man2}
@@ -48,6 +53,8 @@ const HomePage = (props) => (
               occupation="Financial Advisor"
               organization="JPMorgan"
               online="03 Sep 2019 at 7.35PM"
+              hideHomepage={props.hideHomepage}
+              updateInfo={props.updateInfo}
             />
             <MentorCard
               img={man3}
@@ -55,6 +62,8 @@ const HomePage = (props) => (
               occupation="Lawyer"
               organization="Morgan, Lewis & Bockius"
               online="28 Aug 2019 at 10.20AM"
+              hideHomepage={props.hideHomepage}
+              updateInfo={props.updateInfo}
             />
           </HoriScroll>
         </HPSection>

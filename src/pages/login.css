@@ -4,6 +4,8 @@
 
 .login-content{
     padding: 0 8%;
+    max-width: 550px;
+    margin: 0 auto;
 }
 
 header {
@@ -15,7 +17,7 @@ img {
     max-width: 320px;
 }
 
-a {
+a, .link {
     font-weight: 600;
     font-size: 0.8em;
     color: #428aca;

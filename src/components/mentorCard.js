@@ -2,31 +2,43 @@ import React from 'react';
 import './mentorCard.css'
 import Button from './button'
 
-const MentorCard = (props) => (
-    <div className='mentor-card'>
-    <div className='card'>
-        <div 
-          className='circle'
-          style={{backgroundImage: `url(${props.img})`}}
-        >
-        </div>
-        <div>
-            <h3 
-              onClick={props.hideHomepage}
-              className='mentor-name'
-            >{props.name}</h3>
-            <p>{props.occupation}</p>
-            <p>{props.organization}</p>
-        </div>
-        <div className='last-session'>
-            <p>Last session</p>
-            <p>{props.online}</p>
-        </div>
-        <Button 
-          color="#428aca"
-        >Create appointment</Button>
-    </div>
-    </div>
-)
+class MentorCard extends React.Component{
+  state = {}
+
+  showProfile = (name,img,occ,org) => {
+    this.props.updateInfo(name,img,occ,org)
+    this.props.hideHomepage()
+  }
+
+  render(){
+    const { img, name, occupation, organization, online } = this.props
+    return(
+      <div className='mentor-card'>
+      <div className='card'>
+          <div 
+            className='circle'
+            style={{backgroundImage: `url(${img})`}}
+          >
+          </div>
+          <div>
+              <h3 
+                onClick={()=> (this.showProfile(name,img,occupation,organization))}
+                className='mentor-name'
+              >{name}</h3>
+              <p>{occupation}</p>
+              <p>{organization}</p>
+          </div>
+          <div className='last-session'>
+              <p>Last session</p>
+              <p>{online}</p>
+          </div>
+          <Button 
+            color="#428aca"
+          >Create appointment</Button>
+      </div>
+      </div>
+    )
+  }
+}
 
 export default MentorCard

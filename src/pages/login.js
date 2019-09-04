@@ -86,10 +86,10 @@ class Login extends React.Component {
             >
               Login
             </Button>
-            <a href="#">Forgot password</a>
+            <div className='link'>Forgot password</div>
             <div className="new-user">
                 <p>Don't have an account?</p>
-                <a href="#">Sign up for an account.</a>
+                <div className='link'>Sign up for an account.</div>
             </div>
           </div>
         </div>
